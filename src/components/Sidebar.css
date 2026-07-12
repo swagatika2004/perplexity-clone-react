@@ -1,0 +1,181 @@
+/* ===================================
+   Sidebar Container
+=================================== */
+
+.sidebar {
+  width: 260px;
+  height: 100vh;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  background: #0d1117;
+  color: white;
+
+  padding: 20px 16px;
+  box-sizing: border-box;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* ===================================
+   Logo
+=================================== */
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  font-size: 28px;
+  font-weight: 600;
+
+  margin-bottom: 35px;
+}
+
+.logo-icon {
+  color: #00d5ff;
+  font-size: 24px;
+}
+
+/* ===================================
+   Navigation
+=================================== */
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* ===================================
+   Sidebar Item
+=================================== */
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  padding: 13px 14px;
+
+  border-radius: 12px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.sidebar-item:hover {
+  background: #1b212b;
+}
+
+.sidebar-item.active {
+  background: #222933;
+}
+
+.sidebar-icon {
+  font-size: 18px;
+}
+
+/* ===================================
+   Pro Card
+=================================== */
+
+.pro-card {
+  margin-top: auto;
+
+  background: #171c24;
+
+  border-radius: 14px;
+
+  padding: 18px;
+
+  margin-bottom: 20px;
+
+  border: 1px solid #262b35;
+}
+
+.pro-card h4 {
+  margin-bottom: 10px;
+}
+
+.pro-card p {
+  color: #b4b4b4;
+
+  font-size: 14px;
+
+  line-height: 1.5;
+
+  margin-bottom: 18px;
+}
+
+.pro-card button {
+  width: 100%;
+
+  padding: 10px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background: transparent;
+
+  color: #00d5ff;
+
+  border: 1px solid #00d5ff;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.pro-card button:hover {
+  background: #00d5ff;
+  color: black;
+}
+
+/* ===================================
+   Bottom Menu
+=================================== */
+
+.sidebar-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* ===================================
+   Responsive
+=================================== */
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 75px;
+    padding: 18px 10px;
+  }
+
+  .logo span,
+  .sidebar-item span:last-child,
+  .pro-card {
+    display: none;
+  }
+
+  .logo {
+    justify-content: center;
+  }
+
+  .sidebar-item {
+    justify-content: center;
+    padding: 14px;
+  }
+
+  .sidebar-icon {
+    font-size: 20px;
+  }
+}
