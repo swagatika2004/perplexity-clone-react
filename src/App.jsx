@@ -3,7 +3,8 @@ import Sidebar from "./components/Sidebar";
 import Footer from "./components/Footer";
 =======
 import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
+import Hero from "./components/Hero"; 
+import DiscoverPage"./components/DiscoverPage.jsx";
 >>>>>>> a6b753c949b4d723cd627adfb51e58cc49ea1868
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
 =======
       <Navbar/>
       <Hero/>
+<DiscoverPage/>
 >>>>>>> a6b753c949b4d723cd627adfb51e58cc49ea1868
     </>
   );
