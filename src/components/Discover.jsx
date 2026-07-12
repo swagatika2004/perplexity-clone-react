@@ -1,5 +1,6 @@
 
 
+import "./Discover.css";
 import DiscoverCard from "./DiscoverCard";
 
 const articles = [
@@ -22,22 +23,15 @@ const articles = [
 
 function Discover() {
   return (
-    <div className="mt-10">
+    <section className="discover-section">
+      <h2 className="discover-title">Discover</h2>
 
-      <h2 className="text-2xl font-bold mb-4">
-        Discover
-      </h2>
-
-      <div className="grid md:grid-cols-3 gap-5">
+      <div className="discover-grid">
         {articles.map((item, index) => (
-          <DiscoverCard
-            key={index}
-            article={item}
-          />
+          <DiscoverCard key={index} article={item} />
         ))}
       </div>
-
-    </div>
+    </section>
   );
 }
 

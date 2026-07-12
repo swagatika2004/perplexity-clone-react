@@ -1,4 +1,5 @@
 import "./Search.css";
+import SuggestionCard from "./SuggestionCard";
 
 import {
   FiSearch,
@@ -12,93 +13,78 @@ import { RiQuillPenLine } from "react-icons/ri";
 import { LuBrainCircuit } from "react-icons/lu";
 import { TbMathSymbols } from "react-icons/tb";
 
+const suggestions = [
+  "Why is the sky blue?",
+  "Best productivity apps in 2024",
+  "Explain quantum computing",
+  "Latest research on climate change",
+];
+
 function Search() {
   return (
     <section className="hero">
-
-      <h1>Where knowledge begins</h1>
-
-      <p>
-        Ask anything. Get answers backed by real-time sources.
-      </p>
+      <div className="hero-copy">
+        <h1>Where knowledge begins</h1>
+        <p>Ask anything. Get answers backed by real-time sources.</p>
+      </div>
 
       <div className="search-box">
-
-        <input
-          type="text"
-          placeholder="Ask anything..."
-        />
+        <input type="text" placeholder="Ask anything..." />
 
         <div className="search-bottom">
-
           <div className="left-icons">
-            <button>
+            <button type="button">
               <FiSearch />
             </button>
-
-            <button>
+            <button type="button">
               <BsStars />
             </button>
-
-            <button>
+            <button type="button">
               <FiGlobe />
             </button>
-
-            <button>
+            <button type="button">
               <FiPaperclip />
             </button>
           </div>
 
           <div className="right-side">
-
             <div className="pro-toggle">
               <label className="switch">
                 <input type="checkbox" />
                 <span className="slider"></span>
               </label>
-
               <span>Pro</span>
             </div>
-
-            <button className="send-btn">
+            <button className="send-btn" type="button">
               <FiArrowRight />
             </button>
-
           </div>
-
         </div>
-
       </div>
 
       <div className="actions">
-
-        <button className="active">
-          <FiSearch />
-          Ask
+        <button className="active" type="button">
+          <FiSearch /> Ask
         </button>
-
-        <button>
-          <BsStars />
-          Research
+        <button type="button">
+          <BsStars /> Research
         </button>
-
-        <button>
-          <RiQuillPenLine />
-          Write
+        <button type="button">
+          <RiQuillPenLine /> Write
         </button>
-
-        <button>
-          <LuBrainCircuit />
-          Analyze
+        <button type="button">
+          <LuBrainCircuit /> Analyze
         </button>
-
-        <button>
-          <TbMathSymbols />
-          Solve
+        <button type="button">
+          <TbMathSymbols /> Solve
         </button>
-
       </div>
 
+      <div className="suggestions-row">
+        {suggestions.map((text, index) => (
+          <SuggestionCard key={index} text={text} />
+        ))}
+      </div>
     </section>
   );
 }

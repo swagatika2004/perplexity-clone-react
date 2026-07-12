@@ -1,9 +1,10 @@
+import "./SuggestionCard.css";
 
 function SuggestionCard({ text }) {
   return (
-    <div className="bg-zinc-800 p-4 rounded-xl cursor-pointer hover:bg-zinc-700 transition">
-      {text}
-    </div>
+    <button className="suggestion-card" type="button">
+      <span>{text}</span>
+    </button>
   );
 }
 
