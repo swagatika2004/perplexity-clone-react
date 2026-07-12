@@ -51,20 +51,4 @@ body {
   cursor: pointer;
 }
 
-/* Hero */
-.hero {
-  text-align: center;
-  margin-top: 80px;
-  color: white;
-}
 
-.hero h1 {
-  font-size: 64px;
-  font-weight: 600;
-  margin-bottom: 20px;
-}
-
-.hero p {
-  font-size: 24px;
-  color: #b3b3b3;
-}
