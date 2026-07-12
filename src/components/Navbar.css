@@ -1,0 +1,70 @@
+/* Page */
+body {
+  margin: 0;
+  background: #0d1117;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+#root {
+  min-height: 100vh;
+  background: #0d1117;
+}
+
+.main-content {
+  margin-left: 260px;   /* Sidebar width */
+  min-height: 100vh;
+  background: #0d1117;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 20px 40px;
+  margin-left: 260px;   /* Push navbar after sidebar */
+  background: #0d1117;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.signin-btn {
+  margin-left: 40px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #1da1f2;
+  color: white;
+  cursor: pointer;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  margin-top: 80px;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 64px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 24px;
+  color: #b3b3b3;
+}

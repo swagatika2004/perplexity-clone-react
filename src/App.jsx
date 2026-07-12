@@ -1,11 +1,21 @@
 import Sidebar from "./components/Sidebar";
+<<<<<<< HEAD
 import Footer from "./components/Footer";
+=======
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+>>>>>>> a6b753c949b4d723cd627adfb51e58cc49ea1868
 
 function App() {
   return (
     <>
       <Sidebar />
+<<<<<<< HEAD
       <Footer/>
+=======
+      <Navbar/>
+      <Hero/>
+>>>>>>> a6b753c949b4d723cd627adfb51e58cc49ea1868
     </>
   );
 }
